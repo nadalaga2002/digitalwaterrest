@@ -1,0 +1,1114 @@
+2013/10/16 00:40:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\xampp1\htdocs\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp1\htdocs\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp1\htdocs\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp1\htdocs\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp1\htdocs\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\xampp1\htdocs\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 C:\xampp1\htdocs\framework\web\CFormModel.php(39): ModelCode->init()
+#6 C:\xampp1\htdocs\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\xampp1\htdocs\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost/test/index.php?r=gii/default/index
+---
+2013/10/16 01:44:16 [error] [exception.CException] exception 'CException' with message 'RestUserController cannot find the requested view "empty".' in C:\xampp1\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CController.php(782): CController->renderPartial('empty', Array, true)
+#1 C:\xampp1\htdocs\test\protected\controllers\RestUserController.php(126): CController->render('empty', Array, false)
+#2 C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\controller\Behavior.php(77): RestUserController->render('empty', Array, false)
+#3 [internal function]: rest\controller\Behavior->renderRest('empty', Array, false, Array)
+#4 C:\xampp1\htdocs\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 C:\xampp1\htdocs\test\protected\controllers\RestUserController.php(124): CComponent->__call('renderRest', Array)
+#6 C:\xampp1\htdocs\test\protected\controllers\RestUserController.php(124): RestUserController->renderRest('empty', Array, false, Array)
+#7 C:\xampp1\htdocs\test\protected\controllers\RestUserController.php(39): RestUserController->render('empty', Array)
+#8 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): RestUserController->actionIndex()
+#9 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('restUser/index')
+#14 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test/index.php/restUser/index
+---
+2013/10/16 01:44:40 [error] [exception.CException] exception 'CException' with message 'RestUserController cannot find the requested view "empty".' in C:\xampp1\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CController.php(782): CController->renderPartial('empty', Array, true)
+#1 C:\xampp1\htdocs\test\protected\controllers\RestUserController.php(126): CController->render('empty', Array, false)
+#2 C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\controller\Behavior.php(77): RestUserController->render('empty', Array, false)
+#3 [internal function]: rest\controller\Behavior->renderRest('empty', Array, false, Array)
+#4 C:\xampp1\htdocs\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 C:\xampp1\htdocs\test\protected\controllers\RestUserController.php(124): CComponent->__call('renderRest', Array)
+#6 C:\xampp1\htdocs\test\protected\controllers\RestUserController.php(124): RestUserController->renderRest('empty', Array, false, Array)
+#7 C:\xampp1\htdocs\test\protected\controllers\RestUserController.php(58): RestUserController->render('empty', Array)
+#8 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): RestUserController->actionCreate()
+#9 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('restUser/create')
+#14 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test/index.php/restUser/create
+---
+2013/10/16 01:44:59 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Undefined auth user' in C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:35
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test/index.php/api/users
+---
+2013/10/16 01:45:03 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Undefined auth user' in C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:35
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test/index.php/api/users
+---
+2013/10/16 01:45:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Object not found' in C:\xampp1\htdocs\test\protected\controllers\RestUserController.php:97
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\controllers\RestUserController.php(44): RestUserController->loadModel()
+#1 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): RestUserController->actionView()
+#2 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#6 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('restUser/view')
+#7 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/test/index.php/api/users/1
+---
+2013/10/16 01:45:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Object not found' in C:\xampp1\htdocs\test\protected\controllers\RestUserController.php:97
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\controllers\RestUserController.php(44): RestUserController->loadModel()
+#1 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): RestUserController->actionView()
+#2 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#6 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('restUser/view')
+#7 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/test/index.php/api/users/1
+---
+2013/10/16 02:54:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/task".' in C:\xampp1\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api/task')
+#1 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test/index.php/api/task
+---
+2013/10/16 02:54:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/task".' in C:\xampp1\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api/task')
+#1 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test/index.php/api/task
+---
+2013/10/16 02:56:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Object not found' in C:\xampp1\htdocs\test\protected\controllers\TaskController.php:88
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\controllers\TaskController.php(35): TaskController->loadModel()
+#1 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): TaskController->actionView()
+#2 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#6 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Task/view')
+#7 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/test/index.php/api/task/1
+---
+2013/10/16 02:58:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Object not found' in C:\xampp1\htdocs\test\protected\controllers\TaskController.php:88
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\controllers\TaskController.php(35): TaskController->loadModel()
+#1 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): TaskController->actionView()
+#2 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#6 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Task/view')
+#7 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/test/index.php/api/task/1
+---
+2013/10/16 02:59:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Object not found' in C:\xampp1\htdocs\test\protected\controllers\TaskController.php:88
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\controllers\TaskController.php(35): TaskController->loadModel()
+#1 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): TaskController->actionView()
+#2 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#6 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Task/view')
+#7 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/test/index.php/api/task/1
+---
+2013/10/16 02:59:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Object not found' in C:\xampp1\htdocs\test\protected\controllers\RestUserController.php:97
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\controllers\RestUserController.php(44): RestUserController->loadModel()
+#1 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): RestUserController->actionView()
+#2 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#6 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('restUser/view')
+#7 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/test/index.php/api/users/1
+---
+2013/10/16 02:59:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Object not found' in C:\xampp1\htdocs\test\protected\controllers\RestUserController.php:97
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\controllers\RestUserController.php(44): RestUserController->loadModel()
+#1 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): RestUserController->actionView()
+#2 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#6 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('restUser/view')
+#7 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/test/index.php/api/users/1
+---
+2013/10/16 02:59:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Object not found' in C:\xampp1\htdocs\test\protected\controllers\RestUserController.php:97
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\controllers\RestUserController.php(44): RestUserController->loadModel()
+#1 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): RestUserController->actionView()
+#2 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#6 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('restUser/view')
+#7 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/test/index.php/api/users/1
+---
+2013/10/16 03:02:55 [error] [php] Undefined index: id (C:\xampp1\htdocs\test\protected\controllers\TaskController.php:25)
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CController.php(286): TaskController->runAction()
+#1 C:\xampp1\htdocs\framework\web\CController.php(265): TaskController->runActionWithFilters()
+#2 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): TaskController->run()
+#3 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp1\htdocs\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php/api/task
+in C:\xampp1\htdocs\test\protected\controllers\TaskController.php (25)
+in C:\xampp1\htdocs\test\index.php (13)
+2013/10/16 03:02:56 [error] [php] Undefined index: id (C:\xampp1\htdocs\test\protected\controllers\TaskController.php:25)
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CController.php(286): TaskController->runAction()
+#1 C:\xampp1\htdocs\framework\web\CController.php(265): TaskController->runActionWithFilters()
+#2 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): TaskController->run()
+#3 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp1\htdocs\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php/api/task
+in C:\xampp1\htdocs\test\protected\controllers\TaskController.php (25)
+in C:\xampp1\htdocs\test\index.php (13)
+2013/10/16 03:03:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Object not found' in C:\xampp1\htdocs\test\protected\controllers\TaskController.php:87
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\controllers\TaskController.php(34): TaskController->loadModel()
+#1 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): TaskController->actionView()
+#2 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#6 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Task/view')
+#7 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/test/index.php/api/task/1
+---
+2013/10/16 03:03:16 [error] [php] Undefined index: id (C:\xampp1\htdocs\test\protected\controllers\TaskController.php:25)
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CController.php(286): TaskController->runAction()
+#1 C:\xampp1\htdocs\framework\web\CController.php(265): TaskController->runActionWithFilters()
+#2 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): TaskController->run()
+#3 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp1\htdocs\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php/api/task
+in C:\xampp1\htdocs\test\protected\controllers\TaskController.php (25)
+in C:\xampp1\htdocs\test\index.php (13)
+2013/10/16 03:03:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Object not found' in C:\xampp1\htdocs\test\protected\controllers\TaskController.php:87
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\controllers\TaskController.php(34): TaskController->loadModel()
+#1 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): TaskController->actionView()
+#2 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#6 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Task/view')
+#7 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/test/index.php/api/task/1
+---
+2013/10/16 03:04:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Object not found' in C:\xampp1\htdocs\test\protected\controllers\TaskController.php:83
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\controllers\TaskController.php(30): TaskController->loadModel()
+#1 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): TaskController->actionView()
+#2 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#6 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Task/view')
+#7 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/test/index.php/api/task/1
+---
+2013/10/16 03:21:41 [error] [php] Missing argument 1 for TaskController::loadModel(), called in C:\xampp1\htdocs\test\protected\controllers\TaskController.php on line 31 and defined (C:\xampp1\htdocs\test\protected\controllers\TaskController.php:82)
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp1\htdocs\framework\web\CController.php(286): TaskController->runAction()
+#2 C:\xampp1\htdocs\framework\web\CController.php(265): TaskController->runActionWithFilters()
+#3 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): TaskController->run()
+#4 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp1\htdocs\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php/api/task/1
+in C:\xampp1\htdocs\test\protected\controllers\TaskController.php (82)
+in C:\xampp1\htdocs\test\protected\controllers\TaskController.php (31)
+in C:\xampp1\htdocs\test\index.php (13)
+2013/10/16 03:26:26 [error] [exception.CHttpException.401] exception 'CHttpException' in C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:44
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test/index.php/api/task/1
+---
+2013/10/16 03:26:26 [error] [exception.CHttpException.401] exception 'CHttpException' in C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:44
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test/index.php/api/task/1
+---
+2013/10/16 03:26:35 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Undefined auth user' in C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:35
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test/index.php/api/users/1
+---
+2013/10/16 03:26:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Object not found' in C:\xampp1\htdocs\test\protected\controllers\RestUserController.php:97
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\controllers\RestUserController.php(44): RestUserController->loadModel()
+#1 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): RestUserController->actionView()
+#2 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#6 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('restUser/view')
+#7 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/test/index.php/api/users/1
+---
+2013/10/16 03:26:47 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Undefined auth user' in C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:35
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test/index.php/api/users
+---
+2013/10/16 03:26:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Object not found' in C:\xampp1\htdocs\test\protected\controllers\RestUserController.php:97
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\controllers\RestUserController.php(44): RestUserController->loadModel()
+#1 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): RestUserController->actionView()
+#2 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#6 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('restUser/view')
+#7 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/test/index.php/api/users/1
+---
+2013/10/16 03:26:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Object not found' in C:\xampp1\htdocs\test\protected\controllers\RestUserController.php:97
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\controllers\RestUserController.php(44): RestUserController->loadModel()
+#1 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): RestUserController->actionView()
+#2 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#6 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('restUser/view')
+#7 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/test/index.php/api/users/1
+---
+2013/10/16 03:27:25 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Undefined auth user' in C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:35
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test/index.php/api/task
+---
+2013/10/16 03:27:27 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Undefined auth user' in C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:35
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test/index.php/api/task
+---
+2013/10/16 03:27:33 [error] [exception.CHttpException.401] exception 'CHttpException' in C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:44
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test/index.php/api/task
+---
+2013/10/16 03:27:40 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Undefined auth user' in C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:35
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test/index.php/api/task
+---
+2013/10/16 03:28:20 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Undefined auth user' in C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:35
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test/index.php/api/task
+---
+2013/10/16 03:39:13 [error] [php] Missing argument 1 for TaskController::loadModel(), called in C:\xampp1\htdocs\test\protected\controllers\TaskController.php on line 51 and defined (C:\xampp1\htdocs\test\protected\controllers\TaskController.php:83)
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp1\htdocs\framework\web\CController.php(286): TaskController->runAction()
+#2 C:\xampp1\htdocs\framework\web\CController.php(265): TaskController->runActionWithFilters()
+#3 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): TaskController->run()
+#4 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp1\htdocs\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php/api/task/1
+in C:\xampp1\htdocs\test\protected\controllers\TaskController.php (83)
+in C:\xampp1\htdocs\test\protected\controllers\TaskController.php (51)
+in C:\xampp1\htdocs\test\index.php (13)
+2013/10/16 03:40:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/task/1".' in C:\xampp1\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api/task/1')
+#1 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test/index.php/api/task/1
+---
+2013/10/16 03:59:24 [error] [php] Undefined index: Task (C:\xampp1\htdocs\test\protected\controllers\TaskController.php:40)
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CController.php(286): TaskController->runAction()
+#1 C:\xampp1\htdocs\framework\web\CController.php(265): TaskController->runActionWithFilters()
+#2 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): TaskController->run()
+#3 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp1\htdocs\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php/api/task
+in C:\xampp1\htdocs\test\protected\controllers\TaskController.php (40)
+in C:\xampp1\htdocs\test\index.php (13)
+2013/10/16 04:03:34 [warning] [application] Failed to set unsafe attribute "id" of "Task".
+in C:\xampp1\htdocs\test\protected\controllers\TaskController.php (41)
+in C:\xampp1\htdocs\test\index.php (13)
+2013/10/16 04:04:09 [warning] [application] Failed to set unsafe attribute "id" of "Task".
+in C:\xampp1\htdocs\test\protected\controllers\TaskController.php (41)
+in C:\xampp1\htdocs\test\index.php (13)
+2013/10/16 04:17:29 [warning] [application] Failed to set unsafe attribute "id" of "RestUser".
+in C:\xampp1\htdocs\test\protected\controllers\RestUserController.php (53)
+in C:\xampp1\htdocs\test\index.php (13)
+2013/11/05 20:40:35 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Undefined auth user' in C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:35
+Stack trace:
+#0 C:\xampp1\htdocs\test\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test/index.php/api/users
+---
+2013/11/05 20:43:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/task/1".' in C:\xampp1\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api/task/1')
+#1 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test/index.php/api/task/1
+---
+2013/11/05 21:14:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'test'' in C:\xampp1\htdocs\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp1\htdocs\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp1\htdocs\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp1\htdocs\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp1\htdocs\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp1\htdocs\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 C:\xampp1\htdocs\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Task))
+#7 C:\xampp1\htdocs\framework\db\ar\CActiveRecord.php(711): CActiveRecord->getMetaData()
+#8 C:\xampp1\htdocs\framework\db\ar\CActiveRecord.php(156): CActiveRecord->setAttribute('scenario', 'view')
+#9 C:\xampp1\htdocs\test\protected\models\Task.php(27): CActiveRecord->__set('scenario', 'view')
+#10 C:\xampp1\htdocs\framework\db\ar\CActiveRecord.php(395): Task->__construct(NULL)
+#11 C:\xampp1\htdocs\test\protected\models\Task.php(111): CActiveRecord::model('Task')
+#12 C:\xampp1\htdocs\test\protected\controllers\TaskController.php(86): Task::model()
+#13 C:\xampp1\htdocs\test\protected\controllers\TaskController.php(32): TaskController->loadModel()
+#14 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): TaskController->actionView()
+#15 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Task/view')
+#20 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/test/index.php/api/task/1
+---
+2013/11/05 21:17:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'digitalwatermanagement.task' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `task`.
+in C:\xampp1\htdocs\test\protected\models\Task.php (27)
+in C:\xampp1\htdocs\test\protected\models\Task.php (111)
+in C:\xampp1\htdocs\test\protected\controllers\TaskController.php (86)
+2013/11/05 21:17:21 [error] [exception.CDbException] exception 'CDbException' with message 'The table "task" for active record class "Task" cannot be found in the database.' in C:\xampp1\htdocs\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp1\htdocs\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Task))
+#1 C:\xampp1\htdocs\framework\db\ar\CActiveRecord.php(711): CActiveRecord->getMetaData()
+#2 C:\xampp1\htdocs\framework\db\ar\CActiveRecord.php(156): CActiveRecord->setAttribute('scenario', 'view')
+#3 C:\xampp1\htdocs\test\protected\models\Task.php(27): CActiveRecord->__set('scenario', 'view')
+#4 C:\xampp1\htdocs\framework\db\ar\CActiveRecord.php(395): Task->__construct(NULL)
+#5 C:\xampp1\htdocs\test\protected\models\Task.php(111): CActiveRecord::model('Task')
+#6 C:\xampp1\htdocs\test\protected\controllers\TaskController.php(86): Task::model()
+#7 C:\xampp1\htdocs\test\protected\controllers\TaskController.php(32): TaskController->loadModel()
+#8 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): TaskController->actionView()
+#9 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Task/view')
+#14 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp1\htdocs\test\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test/index.php/api/task/1
+---
+2013/11/05 22:19:25 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Undefined auth user' in C:\xampp1\htdocs\digitalwaterrest\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:35
+Stack trace:
+#0 C:\xampp1\htdocs\digitalwaterrest\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/task/1
+---
+2013/11/05 22:19:27 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Undefined auth user' in C:\xampp1\htdocs\digitalwaterrest\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:35
+Stack trace:
+#0 C:\xampp1\htdocs\digitalwaterrest\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/task/1
+---
+2013/11/05 22:52:12 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Undefined auth user' in C:\xampp1\htdocs\digitalwaterrest\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:35
+Stack trace:
+#0 C:\xampp1\htdocs\digitalwaterrest\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve/1
+---
+2013/11/05 22:52:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php:156
+Stack trace:
+#0 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(54): ValveController->loadModel('1')
+#1 [internal function]: ValveController->actionView('1')
+#2 C:\xampp1\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ValveController), Array)
+#3 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ValveController), Object(ReflectionMethod), Array)
+#4 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/view')
+#9 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve/1
+---
+2013/11/05 22:52:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php:156
+Stack trace:
+#0 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(54): ValveController->loadModel('1')
+#1 [internal function]: ValveController->actionView('1')
+#2 C:\xampp1\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ValveController), Array)
+#3 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ValveController), Object(ReflectionMethod), Array)
+#4 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/view')
+#9 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve/1
+---
+2013/11/05 22:53:04 [error] [exception.CException] exception 'CException' with message 'ValveController cannot find the requested view "view".' in C:\xampp1\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#1 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(55): CController->render('view', Array)
+#2 [internal function]: ValveController->actionView('DW00012M1')
+#3 C:\xampp1\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ValveController), Array)
+#4 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ValveController), Object(ReflectionMethod), Array)
+#5 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/view')
+#10 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve/DW00012M1
+---
+2013/11/05 22:53:05 [error] [exception.CException] exception 'CException' with message 'ValveController cannot find the requested view "view".' in C:\xampp1\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#1 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(55): CController->render('view', Array)
+#2 [internal function]: ValveController->actionView('DW00012M1')
+#3 C:\xampp1\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ValveController), Array)
+#4 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ValveController), Object(ReflectionMethod), Array)
+#5 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/view')
+#10 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve/DW00012M1
+---
+2013/11/05 22:55:11 [error] [exception.CException] exception 'CException' with message 'ValveController cannot find the requested view "view".' in C:\xampp1\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#1 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(28): CController->render('view', Array)
+#2 [internal function]: ValveController->actionView('DW00012M1')
+#3 C:\xampp1\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ValveController), Array)
+#4 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ValveController), Object(ReflectionMethod), Array)
+#5 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/view')
+#10 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve/DW00012M1
+---
+2013/11/05 22:56:08 [error] [exception.CException] exception 'CException' with message 'ValveController cannot find the requested view "view".' in C:\xampp1\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#1 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(36): CController->render('view', Array)
+#2 [internal function]: ValveController->actionView('DW00012M1')
+#3 C:\xampp1\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ValveController), Array)
+#4 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ValveController), Object(ReflectionMethod), Array)
+#5 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/view')
+#10 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve/DW00012M1
+---
+2013/11/05 22:56:25 [error] [exception.CException] exception 'CException' with message 'ValveController cannot find the requested view "index".' in C:\xampp1\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#1 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(109): CController->render('index', Array)
+#2 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): ValveController->actionIndex()
+#3 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/index')
+#8 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve/
+---
+2013/11/05 22:56:26 [error] [exception.CException] exception 'CException' with message 'ValveController cannot find the requested view "index".' in C:\xampp1\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#1 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(109): CController->render('index', Array)
+#2 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(49): ValveController->actionIndex()
+#3 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/index')
+#8 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve/
+---
+2013/11/05 23:03:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php:116
+Stack trace:
+#0 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(29): ValveController->loadModel('DW68A124V1')
+#1 [internal function]: ValveController->actionView('DW68A124V1')
+#2 C:\xampp1\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ValveController), Array)
+#3 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ValveController), Object(ReflectionMethod), Array)
+#4 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/view')
+#9 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve/DW68A124V1
+---
+2013/11/05 23:03:40 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Undefined auth user' in C:\xampp1\htdocs\digitalwaterrest\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:35
+Stack trace:
+#0 C:\xampp1\htdocs\digitalwaterrest\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve
+---
+2013/11/05 23:04:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/valve/DW00012M1/site_id/DW68A124V1".' in C:\xampp1\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api/valve/DW000...')
+#1 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve/DW00012M1/site_id/DW68A124V1
+---
+2013/11/05 23:04:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/valve/DW00012M1/site_id/DW68A124V1".' in C:\xampp1\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api/valve/DW000...')
+#1 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve/DW00012M1/site_id/DW68A124V1
+---
+2013/11/05 23:04:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/valve/DW00012M1/site_id/DW68A124V1".' in C:\xampp1\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api/valve/DW000...')
+#1 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve/DW00012M1/site_id/DW68A124V1
+---
+2013/11/05 23:15:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/valve/DW00012M1/site_id/DW68A124V1".' in C:\xampp1\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api/valve/DW000...')
+#1 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve/DW00012M1/site_id/DW68A124V1
+---
+2013/11/06 00:04:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php:126
+Stack trace:
+#0 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(29): ValveController->loadModel('DW68A124V1')
+#1 [internal function]: ValveController->actionView('DW68A124V1')
+#2 C:\xampp1\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ValveController), Array)
+#3 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ValveController), Object(ReflectionMethod), Array)
+#4 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/view')
+#9 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve/DW68A124V1
+---
+2013/11/06 00:04:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php:126
+Stack trace:
+#0 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(29): ValveController->loadModel('DW68A124V1')
+#1 [internal function]: ValveController->actionView('DW68A124V1')
+#2 C:\xampp1\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ValveController), Array)
+#3 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ValveController), Object(ReflectionMethod), Array)
+#4 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/view')
+#9 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valve/DW68A124V1
+---
+2013/11/06 00:10:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/valvebysiteid/DW68A124V1".' in C:\xampp1\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api/valvebysite...')
+#1 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/valvebysiteid/DW68A124V1
+---
+2013/11/06 00:10:58 [error] [php] Undefined variable: model (C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php:38)
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp1\htdocs\framework\web\CController.php(286): ValveController->runAction()
+#3 C:\xampp1\htdocs\framework\web\CController.php(265): ValveController->runActionWithFilters()
+#4 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): ValveController->run()
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CWebApplication->run()
+REQUEST_URI=/digitalwaterrest/index.php/api/valvebysiteid/DW68A124V1
+in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php (38)
+in C:\xampp1\htdocs\digitalwaterrest\index.php (13)
+2013/11/06 01:06:14 [error] [php] Undefined variable: model (C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php:38)
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp1\htdocs\framework\web\CController.php(286): ValveController->runAction()
+#3 C:\xampp1\htdocs\framework\web\CController.php(265): ValveController->runActionWithFilters()
+#4 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): ValveController->run()
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CWebApplication->run()
+REQUEST_URI=/digitalwaterrest/index.php/api/valvesiteid/DW68A124V1
+in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php (38)
+in C:\xampp1\htdocs\digitalwaterrest\index.php (13)
+2013/11/06 01:06:14 [error] [php] Undefined variable: model (C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php:38)
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp1\htdocs\framework\web\CController.php(286): ValveController->runAction()
+#3 C:\xampp1\htdocs\framework\web\CController.php(265): ValveController->runActionWithFilters()
+#4 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): ValveController->run()
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CWebApplication->run()
+REQUEST_URI=/digitalwaterrest/index.php/api/valvesiteid/DW68A124V1
+in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php (38)
+in C:\xampp1\htdocs\digitalwaterrest\index.php (13)
+2013/11/06 01:08:01 [error] [php] Undefined variable: SiteID (C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php:38)
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp1\htdocs\framework\web\CController.php(286): ValveController->runAction()
+#3 C:\xampp1\htdocs\framework\web\CController.php(265): ValveController->runActionWithFilters()
+#4 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): ValveController->run()
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CWebApplication->run()
+REQUEST_URI=/digitalwaterrest/index.php/api/valvesiteid/DW68A124V1
+in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php (38)
+in C:\xampp1\htdocs\digitalwaterrest\index.php (13)
+2013/11/06 11:10:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp1\htdocs\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('viewwaterusage')
+#4 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/viewwater...')
+#5 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/waterusage
+---
+2013/11/06 11:10:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp1\htdocs\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('viewwaterusage')
+#4 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/viewwater...')
+#5 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/waterusage
+---
+2013/11/06 22:04:53 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Undefined auth user' in C:\xampp1\htdocs\digitalwaterrest\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:35
+Stack trace:
+#0 C:\xampp1\htdocs\digitalwaterrest\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/waterusage
+---
+2013/11/06 22:04:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/waterusage".' in C:\xampp1\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api/waterusage')
+#1 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/waterusage
+---
+2013/11/06 22:04:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/waterusage".' in C:\xampp1\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api/waterusage')
+#1 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/waterusage
+---
+2013/11/06 22:05:18 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'DW68A124V1' in 'where clause'. The SQL statement executed was: SELECT  site_id,SUM(amount) AS rows, Week(date) as NumberOfWeek,DATE_ADD(date, INTERVAL (MOD(DAYOFWEEK(date)-1, 7)*-1) DAY) AS week_start,
+			   		DATE_ADD(date, INTERVAL ((MOD(DAYOFWEEK(date)-1, 7)*-1)+6) DAY) AS week_end
+			   FROM waterusage 
+			   WHERE YEARWEEK(date) = YEARWEEK(CURRENT_DATE)  or YEARWEEK(date) = YEARWEEK(CURRENT_DATE - INTERVAL 7 DAY)
+					and site_id = DW68A124V1
+			   GROUP BY YEARWEEK(date).
+in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php (58)
+in C:\xampp1\htdocs\digitalwaterrest\index.php (13)
+2013/11/06 22:05:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'DW68A124V1' in 'where clause'. The SQL statement executed was: SELECT  site_id,SUM(amount) AS rows, Week(date) as NumberOfWeek,DATE_ADD(date, INTERVAL (MOD(DAYOFWEEK(date)-1, 7)*-1) DAY) AS week_start,
+			   		DATE_ADD(date, INTERVAL ((MOD(DAYOFWEEK(date)-1, 7)*-1)+6) DAY) AS week_end
+			   FROM waterusage 
+			   WHERE YEARWEEK(date) = YEARWEEK(CURRENT_DATE)  or YEARWEEK(date) = YEARWEEK(CURRENT_DATE - INTERVAL 7 DAY)
+					and site_id = DW68A124V1
+			   GROUP BY YEARWEEK(date)' in C:\xampp1\htdocs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp1\htdocs\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(58): CDbCommand->queryAll()
+#2 [internal function]: ValveController->actionViewWaterUsage('DW68A124V1')
+#3 C:\xampp1\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ValveController), Array)
+#4 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ValveController), Object(ReflectionMethod), Array)
+#5 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('viewwaterusage')
+#9 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/viewwater...')
+#10 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/waterusage/DW68A124V1
+---
+2013/11/06 22:05:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'DW68A124V1' in 'where clause'. The SQL statement executed was: SELECT  site_id,SUM(amount) AS rows, Week(date) as NumberOfWeek,DATE_ADD(date, INTERVAL (MOD(DAYOFWEEK(date)-1, 7)*-1) DAY) AS week_start,
+			   		DATE_ADD(date, INTERVAL ((MOD(DAYOFWEEK(date)-1, 7)*-1)+6) DAY) AS week_end
+			   FROM waterusage 
+			   WHERE YEARWEEK(date) = YEARWEEK(CURRENT_DATE)  or YEARWEEK(date) = YEARWEEK(CURRENT_DATE - INTERVAL 7 DAY)
+					and site_id = DW68A124V1
+			   GROUP BY YEARWEEK(date).
+in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php (58)
+in C:\xampp1\htdocs\digitalwaterrest\index.php (13)
+2013/11/06 22:05:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'DW68A124V1' in 'where clause'. The SQL statement executed was: SELECT  site_id,SUM(amount) AS rows, Week(date) as NumberOfWeek,DATE_ADD(date, INTERVAL (MOD(DAYOFWEEK(date)-1, 7)*-1) DAY) AS week_start,
+			   		DATE_ADD(date, INTERVAL ((MOD(DAYOFWEEK(date)-1, 7)*-1)+6) DAY) AS week_end
+			   FROM waterusage 
+			   WHERE YEARWEEK(date) = YEARWEEK(CURRENT_DATE)  or YEARWEEK(date) = YEARWEEK(CURRENT_DATE - INTERVAL 7 DAY)
+					and site_id = DW68A124V1
+			   GROUP BY YEARWEEK(date)' in C:\xampp1\htdocs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp1\htdocs\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(58): CDbCommand->queryAll()
+#2 [internal function]: ValveController->actionViewWaterUsage('DW68A124V1')
+#3 C:\xampp1\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ValveController), Array)
+#4 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ValveController), Object(ReflectionMethod), Array)
+#5 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('viewwaterusage')
+#9 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/viewwater...')
+#10 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/waterusage/DW68A124V1
+---
+2013/11/06 22:06:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'DW68A124V1' in 'where clause'. The SQL statement executed was: SELECT  site_id,SUM(amount) AS rows, Week(date) as NumberOfWeek,DATE_ADD(date, INTERVAL (MOD(DAYOFWEEK(date)-1, 7)*-1) DAY) AS week_start, 
+		DATE_ADD(date, INTERVAL ((MOD(DAYOFWEEK(date)-1, 7)*-1)+6) DAY) AS week_end FROM waterusage WHERE YEARWEEK(date) = YEARWEEK(CURRENT_DATE)  or YEARWEEK(date) = YEARWEEK(CURRENT_DATE - INTERVAL 7 DAY) and site_id = DW68A124V1
+		GROUP BY YEARWEEK(date).
+in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php (55)
+in C:\xampp1\htdocs\digitalwaterrest\index.php (13)
+2013/11/06 22:06:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'DW68A124V1' in 'where clause'. The SQL statement executed was: SELECT  site_id,SUM(amount) AS rows, Week(date) as NumberOfWeek,DATE_ADD(date, INTERVAL (MOD(DAYOFWEEK(date)-1, 7)*-1) DAY) AS week_start, 
+		DATE_ADD(date, INTERVAL ((MOD(DAYOFWEEK(date)-1, 7)*-1)+6) DAY) AS week_end FROM waterusage WHERE YEARWEEK(date) = YEARWEEK(CURRENT_DATE)  or YEARWEEK(date) = YEARWEEK(CURRENT_DATE - INTERVAL 7 DAY) and site_id = DW68A124V1
+		GROUP BY YEARWEEK(date)' in C:\xampp1\htdocs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp1\htdocs\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(55): CDbCommand->queryAll()
+#2 [internal function]: ValveController->actionViewWaterUsage('DW68A124V1')
+#3 C:\xampp1\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ValveController), Array)
+#4 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ValveController), Object(ReflectionMethod), Array)
+#5 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('viewwaterusage')
+#9 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/viewwater...')
+#10 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/waterusage/DW68A124V1
+---
+2013/11/06 22:08:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':= DW68A124V1 GROUP BY YEARWEEK(date)' at line 2. The SQL statement executed was: SELECT  site_id,SUM(amount) AS rows, Week(date) as NumberOfWeek,DATE_ADD(date, INTERVAL (MOD(DAYOFWEEK(date)-1, 7)*-1) DAY) AS week_start, 
+		DATE_ADD(date, INTERVAL ((MOD(DAYOFWEEK(date)-1, 7)*-1)+6) DAY) AS week_end FROM waterusage WHERE YEARWEEK(date) = YEARWEEK(CURRENT_DATE)  or YEARWEEK(date) = YEARWEEK(CURRENT_DATE - INTERVAL 7 DAY) and site_id := DW68A124V1 GROUP BY YEARWEEK(date).
+in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php (54)
+in C:\xampp1\htdocs\digitalwaterrest\index.php (13)
+2013/11/06 22:08:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':= DW68A124V1 GROUP BY YEARWEEK(date)' at line 2. The SQL statement executed was: SELECT  site_id,SUM(amount) AS rows, Week(date) as NumberOfWeek,DATE_ADD(date, INTERVAL (MOD(DAYOFWEEK(date)-1, 7)*-1) DAY) AS week_start, 
+		DATE_ADD(date, INTERVAL ((MOD(DAYOFWEEK(date)-1, 7)*-1)+6) DAY) AS week_end FROM waterusage WHERE YEARWEEK(date) = YEARWEEK(CURRENT_DATE)  or YEARWEEK(date) = YEARWEEK(CURRENT_DATE - INTERVAL 7 DAY) and site_id := DW68A124V1 GROUP BY YEARWEEK(date)' in C:\xampp1\htdocs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp1\htdocs\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(54): CDbCommand->queryAll()
+#2 [internal function]: ValveController->actionViewWaterUsage('DW68A124V1')
+#3 C:\xampp1\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ValveController), Array)
+#4 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ValveController), Object(ReflectionMethod), Array)
+#5 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('viewwaterusage')
+#9 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/viewwater...')
+#10 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/waterusage/DW68A124V1
+---
+2013/11/06 22:12:15 [error] [php] Undefined variable: command (C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php:53)
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp1\htdocs\framework\web\CController.php(286): ValveController->runAction()
+#3 C:\xampp1\htdocs\framework\web\CController.php(265): ValveController->runActionWithFilters()
+#4 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): ValveController->run()
+#5 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CWebApplication->run()
+REQUEST_URI=/digitalwaterrest/index.php/api/waterusage/DW68A124V1
+in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php (53)
+in C:\xampp1\htdocs\digitalwaterrest\index.php (13)
+2013/11/06 22:12:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':= DW68A124V1 GROUP BY YEARWEEK(date)' at line 2. The SQL statement executed was: SELECT  site_id,SUM(amount) AS rows, Week(date) as NumberOfWeek,DATE_ADD(date, INTERVAL (MOD(DAYOFWEEK(date)-1, 7)*-1) DAY) AS week_start, 
+		DATE_ADD(date, INTERVAL ((MOD(DAYOFWEEK(date)-1, 7)*-1)+6) DAY) AS week_end FROM waterusage WHERE YEARWEEK(date) = YEARWEEK(CURRENT_DATE)  or YEARWEEK(date) = YEARWEEK(CURRENT_DATE - INTERVAL 7 DAY) and site_id := DW68A124V1 GROUP BY YEARWEEK(date).
+in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php (55)
+in C:\xampp1\htdocs\digitalwaterrest\index.php (13)
+2013/11/06 22:12:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':= DW68A124V1 GROUP BY YEARWEEK(date)' at line 2. The SQL statement executed was: SELECT  site_id,SUM(amount) AS rows, Week(date) as NumberOfWeek,DATE_ADD(date, INTERVAL (MOD(DAYOFWEEK(date)-1, 7)*-1) DAY) AS week_start, 
+		DATE_ADD(date, INTERVAL ((MOD(DAYOFWEEK(date)-1, 7)*-1)+6) DAY) AS week_end FROM waterusage WHERE YEARWEEK(date) = YEARWEEK(CURRENT_DATE)  or YEARWEEK(date) = YEARWEEK(CURRENT_DATE - INTERVAL 7 DAY) and site_id := DW68A124V1 GROUP BY YEARWEEK(date)' in C:\xampp1\htdocs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp1\htdocs\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(55): CDbCommand->queryAll()
+#2 [internal function]: ValveController->actionViewWaterUsage('DW68A124V1')
+#3 C:\xampp1\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ValveController), Array)
+#4 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ValveController), Object(ReflectionMethod), Array)
+#5 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('viewwaterusage')
+#9 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/viewwater...')
+#10 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/waterusage/DW68A124V1
+---
+2013/11/06 22:13:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT  site_id,SUM(amount) AS rows, Week(date) as NumberOfWeek,DATE_ADD(date, INTERVAL (MOD(DAYOFWEEK(date)-1, 7)*-1) DAY) AS week_start, 
+		DATE_ADD(date, INTERVAL ((MOD(DAYOFWEEK(date)-1, 7)*-1)+6) DAY) AS week_end FROM waterusage WHERE YEARWEEK(date) = YEARWEEK(CURRENT_DATE)  or YEARWEEK(date) = YEARWEEK(CURRENT_DATE - INTERVAL 7 DAY) and site_id :DW68A124V1 GROUP BY YEARWEEK(date).
+in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php (55)
+in C:\xampp1\htdocs\digitalwaterrest\index.php (13)
+2013/11/06 22:13:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT  site_id,SUM(amount) AS rows, Week(date) as NumberOfWeek,DATE_ADD(date, INTERVAL (MOD(DAYOFWEEK(date)-1, 7)*-1) DAY) AS week_start, 
+		DATE_ADD(date, INTERVAL ((MOD(DAYOFWEEK(date)-1, 7)*-1)+6) DAY) AS week_end FROM waterusage WHERE YEARWEEK(date) = YEARWEEK(CURRENT_DATE)  or YEARWEEK(date) = YEARWEEK(CURRENT_DATE - INTERVAL 7 DAY) and site_id :DW68A124V1 GROUP BY YEARWEEK(date)' in C:\xampp1\htdocs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp1\htdocs\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(55): CDbCommand->queryAll()
+#2 [internal function]: ValveController->actionViewWaterUsage('DW68A124V1')
+#3 C:\xampp1\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ValveController), Array)
+#4 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ValveController), Object(ReflectionMethod), Array)
+#5 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('viewwaterusage')
+#9 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/viewwater...')
+#10 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/waterusage/DW68A124V1
+---
+2013/11/06 22:13:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT  site_id,SUM(amount) AS rows, Week(date) as NumberOfWeek,DATE_ADD(date, INTERVAL (MOD(DAYOFWEEK(date)-1, 7)*-1) DAY) AS week_start, 
+		DATE_ADD(date, INTERVAL ((MOD(DAYOFWEEK(date)-1, 7)*-1)+6) DAY) AS week_end FROM waterusage WHERE YEARWEEK(date) = YEARWEEK(CURRENT_DATE)  or YEARWEEK(date) = YEARWEEK(CURRENT_DATE - INTERVAL 7 DAY) and site_id = :DW68A124V1 GROUP BY YEARWEEK(date).
+in C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php (55)
+in C:\xampp1\htdocs\digitalwaterrest\index.php (13)
+2013/11/06 22:13:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT  site_id,SUM(amount) AS rows, Week(date) as NumberOfWeek,DATE_ADD(date, INTERVAL (MOD(DAYOFWEEK(date)-1, 7)*-1) DAY) AS week_start, 
+		DATE_ADD(date, INTERVAL ((MOD(DAYOFWEEK(date)-1, 7)*-1)+6) DAY) AS week_end FROM waterusage WHERE YEARWEEK(date) = YEARWEEK(CURRENT_DATE)  or YEARWEEK(date) = YEARWEEK(CURRENT_DATE - INTERVAL 7 DAY) and site_id = :DW68A124V1 GROUP BY YEARWEEK(date)' in C:\xampp1\htdocs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp1\htdocs\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp1\htdocs\digitalwaterrest\protected\controllers\ValveController.php(55): CDbCommand->queryAll()
+#2 [internal function]: ValveController->actionViewWaterUsage('DW68A124V1')
+#3 C:\xampp1\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ValveController), Array)
+#4 C:\xampp1\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ValveController), Object(ReflectionMethod), Array)
+#5 C:\xampp1\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp1\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp1\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp1\htdocs\framework\web\CWebApplication.php(282): CController->run('viewwaterusage')
+#9 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Valve/viewwater...')
+#10 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/waterusage/DW68A124V1
+---
+2013/11/07 02:34:07 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Undefined auth user' in C:\xampp1\htdocs\digitalwaterrest\protected\extensions\yii-rest-api\library\rest\service\auth\adapters\Basic.php:35
+Stack trace:
+#0 C:\xampp1\htdocs\digitalwaterrest\protected\extensions\yii-rest-api\library\rest\Service.php(84): rest\service\auth\adapters\Basic->authenticate()
+#1 C:\xampp1\htdocs\framework\base\CComponent.php(561): rest\Service->onBeginRequest(Object(CEvent))
+#2 C:\xampp1\htdocs\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#3 C:\xampp1\htdocs\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#4 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/waterusage
+---
+2013/11/07 02:34:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/waterusage".' in C:\xampp1\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api/waterusage')
+#1 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/waterusage
+---
+2013/11/07 02:34:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/waterusage".' in C:\xampp1\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp1\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api/waterusage')
+#1 C:\xampp1\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp1\htdocs\digitalwaterrest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/digitalwaterrest/index.php/api/waterusage
+---
